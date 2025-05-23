@@ -119,8 +119,8 @@ Node ID와 Node Name은 노드 실행 중간중간에 나타나며,
 Node ID는 Qm으로 시작, Node Name은 동물 이름 세가지로 구성<br>
 필요 시 터미널에서 스크롤백 모드 진입 후 스크롤해서 찾기
 ```bash
-ctrl-a + [ #스크롤백 모드 진입
-q # 스크롤백 모드 나가기
+Ctrl-A + [ #스크롤백 모드 진입
+Q # 스크롤백 모드 나가기
 ```
 
 https://t.me/gensyntrackbot(텔레그램 봇)에서 `/check node-id` 실행, node-id는 앞에서 찾은 Node ID로 대체
@@ -129,6 +129,9 @@ https://t.me/gensyntrackbot(텔레그램 봇)에서 `/check node-id` 실행, nod
 
 만약 0x00000000 이런식으로 EVM 주소가 제대로 연결되지 않았다면, 전체 프로세스를 새로운 이메일로 다시 시작해야합니다. <br>만약 정상적으로 일반적인 EVM 주소가 보인다면, `swarm.pem` 백업 진행<br>
 `swarm.pem`은 생성된 Gensyn EVM address의 private key를 담고 있기 때문에, **유출에 주의**
+
+백그라운드에서 실행을 유지한 채로 screen으로부터 detach<br>
+`Ctrl + A, D`
 
 `swarm.pem`을 hyperbolic 인스턴스의 root 경로로 복사 후 로컬로 복사
 ```bash
