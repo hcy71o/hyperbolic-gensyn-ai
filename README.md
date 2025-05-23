@@ -123,7 +123,7 @@ Ctrl-A + [ #스크롤백 모드 진입
 Q # 스크롤백 모드 나가기
 ```
 
-https://t.me/gensyntrackbot(텔레그램 봇)에서 `/check node-id` 실행, node-id는 앞에서 찾은 Node ID로 대체
+[https://t.me/gensyntrackbot](https://t.me/gensyntrackbot) (텔레그램 봇)에서 `/check node-id` 실행, node-id는 앞에서 찾은 Node ID로 대체
 
 <img src="images/check_node.png" width="50%"/>
 
