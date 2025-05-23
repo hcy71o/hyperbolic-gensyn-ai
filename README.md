@@ -147,7 +147,7 @@ https://dashboard-math.gensyn.ai/ (math)
 
 
 ## 에러케이스
-여기에 존재하지 않는 에러케이스는 [공식 깃허브 이슈](https://github.com/gensyn-ai/rl-swarm/issues) 혹은 [공식 디스코드](https://discord.gg/gensyn)를 참조하세요. 버전 업데이트마다 수많은 에러케이스가 발생하는 것으로 보입니다..ㅜㅜ
+여기에 존재하지 않는 에러케이스는 [공식 깃허브 이슈](https://github.com/gensyn-ai/rl-swarm/issues) 혹은 [공식 디스코드](https://discord.gg/gensyn)를 참조하세요. rl-swarm 버전 업데이트마다 수많은 에러케이스가 발생하는 것으로 보입니다..ㅜㅜ
 
 
 ### `http://localhost:3000/` 실행 시 “Loading…” 에서 넘어가지 않는 경우
