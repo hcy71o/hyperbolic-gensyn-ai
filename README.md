@@ -20,14 +20,14 @@ cat ~/.ssh/id_ed25519.pub
 ```
 Hyperbolic → Settings에 복사한 public key를 붙여넣고 저장
 
-<img src="images/hyperbolic_sshkey.png" style="max-width:100%;"/>
+<img src="images/hyperbolic_sshkey.png" width="100%"/>
 
 ## GPU 대여 & 인스턴스 접속
 
 크레딧 충전 (5$) 후 Rental GPU 리스트에서 가격이 낮은 GPU 선택(RTX 4090 또는 H100 권장)<br>
 `GPU count: 1` / `Docker image: pytorch/pytorch:latest`로 설정
 
-<img src="images/rent_gpu.png" style="max-width:50%;"/>
+<img src="images/rent_gpu.png" width="50%"/>
 
 GPU가 준비 완료되면, 인스턴스에 접속할 수 있는 ssh 명령어를 복사(아래는 예시)
 ```bash
@@ -105,7 +105,7 @@ source .venv/bin/activate
 `Waiting for userData.json to be created...` 메시지가 나타나면,
 로컬 브라우저에서 `http://localhost:3000/` 접속 후 Gensyn 이메일 로그인
 
-<img src="images/login.png" style="max-width:50%;"/>
+<img src="images/login.png" width="50%"/>
 
 A100 or H100 의 경우 Math hard (B) 선택 후 → 파라미터 선택 (7B, 32B or 72B), 
 기타 RTX 3090 or 4090의 경우 Math (A) 선택 후 → 파라미터 선택 (0.5B or 1.5B)
@@ -125,7 +125,7 @@ q # 스크롤백 모드 나가기
 
 https://t.me/gensyntrackbot(텔레그램 봇)에서 `/check node-id` 실행, node-id는 앞에서 찾은 Node ID로 대체
 
-<img src="images/check_node.png" style="max-width:50%;"/>
+<img src="images/check_node.png" width="50%"/>
 
 만약 0x00000000 이런식으로 EVM 주소가 제대로 연결되지 않았다면, 전체 프로세스를 새로운 이메일로 다시 시작해야합니다. <br>만약 정상적으로 일반적인 EVM 주소가 보인다면, `swarm.pem` 백업 진행<br>
 `swarm.pem`은 생성된 Gensyn EVM address의 private key를 담고 있기 때문에, **유출에 주의**
@@ -149,7 +149,7 @@ https://dashboard-math.gensyn.ai/ (math)
 
 ### `http://localhost:3000/` 실행 시 “Loading…” 에서 넘어가지 않는 경우
 
-<img src="images/error1.png" style="max-width:100%;"/>
+<img src="images/error1.png" width="100%"/>
 
 프로세스 종료
 ```bash
@@ -274,7 +274,7 @@ source .venv/bin/activate && \
 
 ### transformers 패키지 관련 에러
 
-<img src="images/error2.png" style="max-width:100%;"/>
+<img src="images/error2.png" width="100%"/>
 
 `transformers` 패키지 다운그레이드 후 노드 재실행
 ```bash
