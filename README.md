@@ -284,3 +284,27 @@ source .venv/bin/activate && \
 pip install transformers==4.48.2
 ./run_rl_swarm.sh
 ```
+
+
+### tf32 관련 에러
+
+아래와 같은 에러가 발생하는 경우,<br>
+`raise ValueError("--tf32 requires Ampere or a newer GPU arch, cuda>=11 and torch>=1.7")
+ValueError: --tf32 requires Ampere or a newer GPU arch, cuda>=11 and torch>=1.7`
+
+config.yaml 파일 수정 (0.5b 모델 예시로, 사용 모델에 따라 0.5b, 1.5b, 7b, 32b, 72b 중 선택)
+```bash
+nano hivemind_exp/configs/gpu/grpo-qwen-2.5-0.5b-deepseek-r1.yaml
+```
+`tf32: true` -> `tf32: false` 로 설정
+
+저장 & 종료
+```bash
+Ctrl+O → Enter → Ctrl+X
+```
+노드 재실행
+```bash
+python3 -m venv .venv && \
+source .venv/bin/activate && \
+./run_rl_swarm.sh
+```
